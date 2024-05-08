@@ -1,0 +1,60 @@
+/* Estilos para o container que contém os cards */
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Estilos para os cards dentro do container */
+.container .card {
+    width: 330px;
+    height: 600px;
+    align-self: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: black;
+}
+
+/* Estilos específicos para o segundo card */
+.container .card:nth-child(2) {
+    margin: auto;
+}
+
+/* Estilos ao passar o mouse sobre os cards */
+.container .card:hover {
+    top: -15px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o título (h4) dentro dos cards */
+.container .card h4 {
+    font-weight: 600;
+}
+
+/* Estilos para o texto (p) dentro dos cards */
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    line-height: 1.6rem; /* Correção: era font-weight */
+    color: yellow;
+    text-shadow: orangered;
+    text-align: justify;
+}
+
+/* Estilos para os links (a) dentro dos cards */
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Estilos para alinhar os cards */
+.alinharcards {
+    display: flex;
+    justify-content: center;
+}
